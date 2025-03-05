@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm4cvaa38spp4"
-path="res://.godot/imported/CustomDungeonTiles.png-ac77b8b0151472b48ef0535b9b9d792d.ctex"
+uid="uid://bons7jrmbqx68"
+path="res://.godot/imported/SnowmanFrontLeft.png-e7465d313807ee9102659ff13aaff3eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/CustomDungeonTiles.png"
-dest_files=["res://.godot/imported/CustomDungeonTiles.png-ac77b8b0151472b48ef0535b9b9d792d.ctex"]
+source_file="res://Assets/SnowmanFrontLeft.png"
+dest_files=["res://.godot/imported/SnowmanFrontLeft.png-e7465d313807ee9102659ff13aaff3eb.ctex"]
 
 [params]
 
