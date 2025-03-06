@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b424kpxre1fjd"]
 
-[ext_resource type="Texture2D" uid="uid://du1crtibh3cy5" path="res://Assets/SnowmanFrontRight.png" id="1_0e4eb"]
+[ext_resource type="Texture2D" uid="uid://dfsklgxilvvkq" path="res://Assets/SnowmanFrontRight.png" id="1_0e4eb"]
 [ext_resource type="Script" path="res://player.gd" id="1_t0leq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ulofq"]
