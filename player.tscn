@@ -1,10 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://b424kpxre1fjd"]
+[gd_scene load_steps=3 format=3 uid="uid://b424kpxre1fjd"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_o2cos"]
+[ext_resource type="Texture2D" uid="uid://du1crtibh3cy5" path="res://Assets/SnowmanFrontRight.png" id="1_0e4eb"]
+[ext_resource type="Script" path="res://player.gd" id="1_t0leq"]
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_t0leq")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_o2cos")
+[node name="AnimatedSprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_0e4eb")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-6, 0, -9, 3, -9, 11, -7, 14, -4, 15, 4, 15, 4, 15, 4, 15, 7, 14, 9, 12, 9, 5, 7, 2, 5, 1, 5, -1, 7, -2, 7, -4, 6, -6, 4, -7, 4, -8, 7, -8, 7, -10, 4, -10, 4, -16, -4, -16, -4, -11, -4, -10, -7, -10, -7, -8, -4, -8, -6, -6, -7, -4, -7, -2, -5, -1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1)
+zoom = Vector2(8, 8)
+position_smoothing_enabled = true
