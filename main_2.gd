@@ -3,6 +3,7 @@ extends Node2D
 
 @export var target_position: Vector2 = Vector2(992,735)
 @export var target_position2: Vector2 = Vector2(288,80)
+@export var target_scene: String = "res://main.tscn"  # Set this to the scene you want to load
 var playerScene = preload("res://player.tscn")
 
 
@@ -31,3 +32,8 @@ func _on_doorway_2_body_entered(body):
 	if body.is_in_group("player") and target_position2 != Vector2.ZERO:
 		print("Player detected in door2! Teleporting...")
 		body.global_position = target_position2
+
+
+func _on_doorway_3_body_entered(body):
+	if body.is_in_group("player"):  # Make sure the player is in the correct group
+		get_tree().change_scene_to_file(target_scene)  # Change scene
