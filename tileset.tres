@@ -1,10 +1,10 @@
-[gd_resource type="TileSet" load_steps=12 format=3 uid="uid://bvot7kbdnn5vf"]
+[gd_resource type="TileSet" load_steps=12 format=3 uid="uid://5ehnbpkl52o6"]
 
-[ext_resource type="Texture2D" uid="uid://n0wf3sb7s7rx" path="res://Assets/interior full/basics/wallpapers.png" id="1_teqtb"]
-[ext_resource type="Texture2D" uid="uid://ci4hfdjx8vw4f" path="res://Assets/2D Pixel Dungeon Asset Pack/Dungeon_Tileset_at.png" id="3_84h4x"]
-[ext_resource type="Texture2D" uid="uid://vtd4pc5q3n7i" path="res://Assets/interior full/furniture/decorations.png" id="3_fclox"]
-[ext_resource type="Texture2D" uid="uid://cm4cvaa38spp4" path="res://Assets/CustomDungeonTiles.png" id="3_mst28"]
-[ext_resource type="Texture2D" uid="uid://6daiq3rnrelr" path="res://Assets/DungeonAssets1.png" id="4_atdig"]
+[ext_resource type="Texture2D" uid="uid://n0wf3sb7s7rx" path="res://assets/interior full/basics/wallpapers.png" id="1_teqtb"]
+[ext_resource type="Texture2D" uid="uid://ci4hfdjx8vw4f" path="res://assets/2D Pixel Dungeon Asset Pack/Dungeon_Tileset_at.png" id="3_84h4x"]
+[ext_resource type="Texture2D" uid="uid://vtd4pc5q3n7i" path="res://assets/interior full/furniture/decorations.png" id="3_fclox"]
+[ext_resource type="Texture2D" uid="uid://cm4cvaa38spp4" path="res://assets/CustomDungeonTiles.png" id="3_mst28"]
+[ext_resource type="Texture2D" uid="uid://6daiq3rnrelr" path="res://assets/DungeonAssets1.png" id="4_atdig"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_odvjy"]
 
@@ -3695,6 +3695,7 @@ texture = ExtResource("3_mst28")
 2:1/0 = 0
 3:1/0 = 0
 4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, -1.1875, 8, -1.0625, 8, -8)
 5:1/0 = 0
 6:1/0 = 0
 7:1/0 = 0
@@ -3714,16 +3715,22 @@ texture = ExtResource("3_mst28")
 5:3/0 = 0
 6:3/0 = 0
 7:3/0 = 0
+0:4/next_alternative_id = 2
 0:4/0 = 0
+1:4/next_alternative_id = 2
 1:4/0 = 0
+2:4/next_alternative_id = 2
 2:4/0 = 0
 3:4/0 = 0
 4:4/0 = 0
 5:4/0 = 0
 6:4/0 = 0
 7:4/0 = 0
+0:5/next_alternative_id = 2
 0:5/0 = 0
+1:5/next_alternative_id = 2
 1:5/0 = 0
+2:5/next_alternative_id = 2
 2:5/0 = 0
 3:5/0 = 0
 4:5/0 = 0
@@ -3741,8 +3748,8 @@ texture = ExtResource("3_mst28")
 7:7/0 = 0
 
 [resource]
-physics_layer_0/collision_layer = 2
-physics_layer_0/collision_mask = 0
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 2
 physics_layer_0/physics_material = SubResource("PhysicsMaterial_odvjy")
 sources/0 = SubResource("TileSetAtlasSource_ss8mp")
 sources/2 = SubResource("TileSetAtlasSource_0om17")
