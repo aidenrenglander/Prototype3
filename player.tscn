@@ -1,13 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://dm66cqiqdq0xo"]
+[gd_scene load_steps=4 format=3 uid="uid://b424kpxre1fjd"]
 
-[ext_resource type="Texture2D" uid="uid://du1crtibh3cy5" path="res://assets/SnowmanFrontRight.png" id="1_0e4eb"]
+[ext_resource type="Texture2D" uid="uid://du1crtibh3cy5" path="res://Assets/SnowmanFrontRight.png" id="1_0e4eb"]
 [ext_resource type="Script" path="res://player.gd" id="1_t0leq"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ulofq"]
-height = 38.0
+height = 34.0
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 texture_filter = 1
+collision_mask = 6
 safe_margin = 0.001
 script = ExtResource("1_t0leq")
 
@@ -16,6 +17,7 @@ texture = ExtResource("1_0e4eb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1)
+zoom = Vector2(8, 8)
 position_smoothing_enabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
